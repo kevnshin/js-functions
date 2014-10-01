@@ -243,6 +243,19 @@ function areEqual(num1,num2){
  * @return {number} the smallest number
  */
 
+function minimum(num1,num2){
+
+  if(num1<num2){
+    return  num1;
+  }
+
+  else{
+    return num2;
+  }
+
+}
+
+
 /**
  * Returns the largest value of two numbers.
  * @param {number} x
