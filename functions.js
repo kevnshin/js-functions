@@ -183,6 +183,21 @@ function calculate(str,num1,num2){
  * @return {boolean} `a` is larger than `b`
  */
 
+function isGreaterThan(num1,num2){
+
+  if(num1>num2){
+    return  true;
+  }
+
+  else{
+    return false;
+  }
+
+
+}
+
+
+
 /**
  * Returns true if `a` is less than `b`.
  * @param {number} a
