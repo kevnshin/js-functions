@@ -329,6 +329,37 @@ function isOdd(num){
  * @return {string} the score represented as a letter grade
  */
 
+function letterGrade(score,scorePossible){
+
+  //get percentage score
+  var percentScore = 100*(score/scorePossible);
+  var grade = '';
+
+  if((percentScore>=90)&&(percentScore<=100)){
+    grade = 'A';
+  }
+
+  else if((percentScore>=80)&&(percentScore<90)){
+    grade = 'B';
+  }
+
+  else if((percentScore>=70)&&(percentScore<80)){
+    grade = 'C';
+  }
+
+  else if((percentScore>=60)&&(percentScore<70)){
+    grade = 'D';
+  }
+
+  else{
+    grade = 'F';
+  }
+
+  return grade;
+
+
+}
+
 /**
  * Checks if a `restaurant` object has are `views` field.
  * If it does, increase it by 1. If it does not,
