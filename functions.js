@@ -282,6 +282,20 @@ function maximum(num1,num2){
  * @return {boolean} the number is even
  */
 
+function isEven(num){
+
+  if((num%2)===0){
+    return true;
+  }
+
+  else{
+    return false;
+  }
+
+
+}
+
+
 /**
  * Returns true if `n` is odd.
  * @param {number} n
