@@ -85,6 +85,12 @@ function multiply(num1,num2){
  * @return {number} the quotient
  */
 
+function divide(num1,num2){
+
+  return num1/num2;
+}
+
+
 /**
  * Multiplies a number by itself.
  * @param {number} x, number to be squared
