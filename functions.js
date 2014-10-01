@@ -302,6 +302,21 @@ function isEven(num){
  * @return {boolean} the number is odd
  */
 
+function isOdd(num){
+
+  if((num%2)!==0){
+    return true;
+  }
+
+  else{
+    return false;
+  }
+
+
+}
+
+
+
 /**
  * Returns a letter grade.
  * "A": 90-100%
