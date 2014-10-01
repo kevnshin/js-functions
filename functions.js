@@ -97,6 +97,21 @@ function divide(num1,num2){
  * @return {number} squared
  */
 
+function square(num){
+
+  //if the number is not zero, return square
+  if(num!==0){
+    return num*num;
+  }
+
+  //if it is zero, return 1
+  else{
+    return 1;
+  }
+}
+
+
+
 /**
  * Performs a mathematical operation on two numbers.
  * Also prints out the equation: (i.e.) "1 + 5 = 6" or "8 / 2 = 4".
