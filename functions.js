@@ -224,6 +224,18 @@ function isLessThan(num1,num2){
  * @return {boolean} the numbers are equal
  */
 
+function areEqual(num1,num2){
+
+  if(num1===num2){
+    return  true;
+  }
+
+  else{
+    return false;
+  }
+
+}
+
 /**
  * Returns the smallest value of two numbers.
  * @param {number} x
