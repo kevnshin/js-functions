@@ -193,7 +193,6 @@ function isGreaterThan(num1,num2){
     return false;
   }
 
-
 }
 
 
@@ -204,6 +203,19 @@ function isGreaterThan(num1,num2){
  * @param {number} b
  * @return {boolean} `a` is smaller than `b`
  */
+
+function isLessThan(num1,num2){
+
+  if(num1<num2){
+    return  true;
+  }
+
+  else{
+    return false;
+  }
+
+}
+
 
 /**
  * Returns true if `a` and `b` are equal.
