@@ -4,6 +4,14 @@
  * @return {string} the number as a string
  */
 
+ function numberToString(num){
+
+  var str = '';
+  str+=num;
+  return str;
+  
+ }
+
 /**
  * Adds one to a given number.
  * @param {number} n
