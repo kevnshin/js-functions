@@ -72,6 +72,12 @@ function subtract(num1,num2){
  * @return {number} the product
  */
 
+function multiply(num1,num2){
+
+  return num1*num2;
+}
+
+
 /**
  * Divides the first number by the second.
  * @param {number} x
