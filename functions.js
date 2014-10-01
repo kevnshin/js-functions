@@ -9,7 +9,7 @@
   var str = '';
   str+=num;
   return str;
-  
+
  }
 
 /**
@@ -17,6 +17,13 @@
  * @param {number} n
  * @return {number}
  */
+
+function increase(num){
+
+  return num+1;
+
+}
+
 
 /**
  * Subtracts one from a given number.
