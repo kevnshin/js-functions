@@ -121,6 +121,61 @@ function square(num){
  * @return {number} the result
  */
 
+function calculate(str,num1,num2){
+
+  var result=0;
+
+  //find out what the operation is
+  switch(str.toUpperCase()){
+
+    case 'ADD':
+      str='+';
+      result = num1+num2;
+      console.log(num1+' '+str+' '+num2+' = '+result);
+      break;
+
+    case 'SUBTRACT':
+      str='-';
+      result = num1-num2;
+      console.log(num1+' '+str+' '+num2+' = '+result);
+      break;
+
+    case 'MULTIPLY':
+      str='*';
+      result = num1*num2;
+      console.log(num1+' '+str+' '+num2+' = '+result);
+      break;
+
+    case 'DIVIDE':
+      str='/';
+
+      //if the second number is not zero, go ahead and divide
+      if(num2!==0){
+        result = num1/num2;
+        console.log(num1+' '+str+' '+num2+' = '+result);
+      }
+
+      else{
+        result = undefined;
+      }
+
+      break;
+
+    default:
+
+      console.log("Somethign went wrong, please try function again");
+
+
+  }
+
+
+
+
+  return result;
+}
+
+
+
 /**
  * Returns true if `a` is greater than `b`.
  * @param {number} a
