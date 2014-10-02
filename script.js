@@ -6,17 +6,21 @@ function runAfterTests() {
    */
 
   // Create a variable called `myNumber`, and assign it to any number
-
+  var myNumber = 7;
   /**
    * Create another variable called `stringValue`.
    * Assign it the value that's returned when you pass
    * `myNumber into the function `numberToString`.
    */
 
+   var stringValue = myNumber.numberToString();
+
   /**
    * If you pass `myNumber` and `stringValue` into `areEqual`,
    * what value will you get back? Why is that?
    */
+
+   console.log(areEqual(myNumber,stringValue));
 
   /**
    * You may have noticed that the `calculate` function combined
@@ -44,6 +48,6 @@ function runAfterTests() {
 
   // What happens if you were to uncomment the following lines?
 
-  // combine = improvedCombine;
-  // console.log(combine('combine', 'improved!', ' is '));
+  combine = improvedCombine;
+  console.log(combine('combine', 'improved!', ' is '));
 }

@@ -87,7 +87,9 @@ function multiply(num1,num2){
 
 function divide(num1,num2){
 
-  return num1/num2;
+    return num1/num2;
+
+
 }
 
 
@@ -130,35 +132,26 @@ function calculate(str,num1,num2){
 
     case 'ADD':
       str='+';
-      result = num1+num2;
+      result = add(num1,num2);
       console.log(num1+' '+str+' '+num2+' = '+result);
       break;
 
     case 'SUBTRACT':
       str='-';
-      result = num1-num2;
+      result = subtract(num1,num2);
       console.log(num1+' '+str+' '+num2+' = '+result);
       break;
 
     case 'MULTIPLY':
       str='*';
-      result = num1*num2;
+      result = multiply(num1,num2);
       console.log(num1+' '+str+' '+num2+' = '+result);
       break;
 
     case 'DIVIDE':
       str='/';
-
-      //if the second number is not zero, go ahead and divide
-      if(num2!==0){
-        result = num1/num2;
-        console.log(num1+' '+str+' '+num2+' = '+result);
-      }
-
-      else{
-        result = undefined;
-      }
-
+      result = divide(num1,num2);
+      console.log(num1+' '+str+' '+num2+' = '+result);
       break;
 
     default:
@@ -304,7 +297,7 @@ function isEven(num){
 
 function isOdd(num){
 
-  if((num%2)!==0){
+  if(!isEven(num)){
     return true;
   }
 
@@ -349,6 +342,11 @@ function letterGrade(score,scorePossible){
 
   else if((percentScore>=60)&&(percentScore<70)){
     grade = 'D';
+  }
+
+  else if((percentScore<0) || (percentScore>100)){
+    grade = 'Error, scoring was wrong';
+
   }
 
   else{
@@ -399,7 +397,11 @@ function combine(str1, str2){
 
 }
 
+function improvedCombine(str1, str2, glue){
 
+  return str1+glue+str2;
+
+}
 
 /**
  * Returns a circle object with the properties `circumference` and `area`.
@@ -413,7 +415,7 @@ function createCircle(radius){
 
   var circle = {
     circumference: (2*Math.PI*radius),
-    area: (Math.PI*radius*radius),
+    area: (Math.PI*square(radius)),
   };
 
   return circle;
