@@ -393,6 +393,14 @@ function incrementReviews(restaurant){
  * @return {string} joined the words joined with a space
  */
 
+function combine(str1, str2){
+
+  return str1+' '+str2;
+
+}
+
+
+
 /**
  * Returns a circle object with the properties `circumference` and `area`.
  * Use Math.PI for the value π.
