@@ -102,14 +102,8 @@ function divide(num1,num2){
 function square(num){
 
   //if the number is not zero, return square
-  if(num!==0){
     return num*num;
-  }
 
-  //if it is zero, return 1
-  else{
-    return 1;
-  }
 }
 
 
